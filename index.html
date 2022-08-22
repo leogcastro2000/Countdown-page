@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <title>Countdown Page</title>
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <div id="timer-content">
+                <div id="countdown">
+                    <h2 id="countdown-header">Ready to Launch in...</h2>
+                    <div id="timer">
+                        <p id="timer-display">
+                            <span class="time" id="days"></span>:<span class="time" id="hours"></span>:<span
+                                class="time" id="minutes"></span>:<span class="time" id="seconds"></span>
+                        </p>
+                    </div>
+                </div>
+                <div id="description">
+                    <p>Subscribe to find out more about our content</p>
+                    <a href="#" id="subscribe" class="button">Subscribe</a>
+                </div>
+            </div>
+            <img src="Assets/top-image.svg" alt="Top Image" id="top-image">
+            <div id="main-image">
+                <img src="Assets/rocket.svg" alt="Rocket Image" id="rocket-image">
+            </div>
+            <img src="Assets/bottom-image.svg" alt="bottom image" id="bottom-image">
+        </div>
+
+        <div id="modal">
+            <form id="form">
+                <div id="close-button">
+                    <button class="close-modal">X</button>
+                </div>
+
+                <div id="input-area">
+                    <div id="username-area">
+                        <label class="label" for="username">Name:</label>
+                        <input type="text" name="username" id="usename" required autocomplete="off">
+                    </div>
+
+                    <div id="email-area">
+                        <label class="label" for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required autocomplete="off">
+                    </div>
+
+                    <div id="button-area">
+                        <button class="submit-button" type="button">Send</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="message" id="success-submit">
+                <h4>Submitted with success!</h4>
+            </div>
+            <div class="message" id="error-submit">
+                <h4>Please fill out all the fields!</h4>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
